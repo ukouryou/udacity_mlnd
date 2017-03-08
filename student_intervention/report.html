@@ -12334,7 +12334,7 @@ Testing set has 95 samples.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO：从sklearn中引入三个监督学习模型</span>
@@ -12345,8 +12345,8 @@ Testing set has 95 samples.
 <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">tree</span>
 <span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
 <span class="c1"># TODO：初始化三个模型</span>
-<span class="n">clf_A</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">()</span>
-<span class="n">clf_B</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">DecisionTreeClassifier</span><span class="p">()</span>
+<span class="n">clf_A</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">random_state</span> <span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">clf_B</span> <span class="o">=</span> <span class="n">tree</span><span class="o">.</span><span class="n">DecisionTreeClassifier</span><span class="p">(</span><span class="n">random_state</span> <span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">clf_C</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">()</span>
 
 <span class="c1"># TODO：设置训练集大小</span>
@@ -12384,56 +12384,56 @@ Testing set has 95 samples.
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Training a SVC using a training set size of 100. . .
-Trained model in 0.0022 seconds
-Made predictions in 0.0010 seconds.
+Trained model in 0.0012 seconds
+Made predictions in 0.0007 seconds.
 F1 score for training set: 0.8591.
-Made predictions in 0.0012 seconds.
+Made predictions in 0.0007 seconds.
 F1 score for test set: 0.7838.
 Training a SVC using a training set size of 200. . .
-Trained model in 0.0072 seconds
-Made predictions in 0.0044 seconds.
+Trained model in 0.0071 seconds
+Made predictions in 0.0022 seconds.
 F1 score for training set: 0.8693.
 Made predictions in 0.0012 seconds.
 F1 score for test set: 0.7755.
 Training a SVC using a training set size of 300. . .
-Trained model in 0.0201 seconds
+Trained model in 0.0102 seconds
 Made predictions in 0.0086 seconds.
 F1 score for training set: 0.8692.
-Made predictions in 0.0015 seconds.
+Made predictions in 0.0016 seconds.
 F1 score for test set: 0.7586.
 Training a DecisionTreeClassifier using a training set size of 100. . .
-Trained model in 0.0006 seconds
-Made predictions in 0.0001 seconds.
-F1 score for training set: 1.0000.
+Trained model in 0.0086 seconds
 Made predictions in 0.0002 seconds.
-F1 score for test set: 0.7478.
+F1 score for training set: 1.0000.
+Made predictions in 0.0001 seconds.
+F1 score for test set: 0.6942.
 Training a DecisionTreeClassifier using a training set size of 200. . .
-Trained model in 0.0013 seconds
+Trained model in 0.0011 seconds
 Made predictions in 0.0003 seconds.
 F1 score for training set: 1.0000.
 Made predictions in 0.0002 seconds.
-F1 score for test set: 0.7287.
+F1 score for test set: 0.7132.
 Training a DecisionTreeClassifier using a training set size of 300. . .
-Trained model in 0.0018 seconds
-Made predictions in 0.0002 seconds.
+Trained model in 0.0062 seconds
+Made predictions in 0.0003 seconds.
 F1 score for training set: 1.0000.
 Made predictions in 0.0002 seconds.
-F1 score for test set: 0.7119.
+F1 score for test set: 0.7167.
 Training a KNeighborsClassifier using a training set size of 100. . .
-Trained model in 0.0004 seconds
-Made predictions in 0.0010 seconds.
+Trained model in 0.0005 seconds
+Made predictions in 0.0012 seconds.
 F1 score for training set: 0.7972.
-Made predictions in 0.0011 seconds.
+Made predictions in 0.0009 seconds.
 F1 score for test set: 0.7068.
 Training a KNeighborsClassifier using a training set size of 200. . .
-Trained model in 0.0006 seconds
-Made predictions in 0.0027 seconds.
+Trained model in 0.0005 seconds
+Made predictions in 0.0023 seconds.
 F1 score for training set: 0.8571.
-Made predictions in 0.0014 seconds.
+Made predictions in 0.0061 seconds.
 F1 score for test set: 0.7121.
 Training a KNeighborsClassifier using a training set size of 300. . .
 Trained model in 0.0007 seconds
-Made predictions in 0.0114 seconds.
+Made predictions in 0.0086 seconds.
 F1 score for training set: 0.8722.
 Made predictions in 0.0019 seconds.
 F1 score for test set: 0.7482.
